@@ -38,13 +38,50 @@
       margin: 0.7rem 1.5rem;
     }
     .img-container{
-        margin: 1.5rem;
-        border-radius: 10px;
+      position: relative;
     }
+
+    .img-equi{
+        margin-top: 0.5rem;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .img-view{
+      height: 292px;
+      width: 292px;
+      border-radius: 10px;
+     
+      display: none;
+      top:50%;
+      left:50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+    .img-view>img{
+      height: 50px;
+      width: 50px;
+      display: none;
+    }
+    .img-container:hover .img-view{
+      display: flex;
+      background-color: rgba(0, 255, 255, 0.37);
+    }
+    .img-view:hover{
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .img-view:hover>img{
+        display: flex;
+    }
+    
     .card-title{
       color: rgb(215, 227, 252);
       font-size: 24px;
       font-weight: 600;
+    }
+    .card-title:hover{
+      color:var(--cyan);
     }
     .card-paragraph{
       color: var(--soft-blue);
@@ -101,6 +138,12 @@
       margin-right: 10px;
       border: 1px solid white;
       border-radius: 50%;
+    }
+    .creator-name{
+      color: #ffffff;
+    }
+    .creator-name:hover{
+      color: var(--cyan);
     }
    /* hover effect */
    .middle {

@@ -1,0 +1,105 @@
+:root {
+
+    --white: #ffffff; 
+    --main-bg-blue: hsl(217, 54%, 11%);
+    --card-bg-blue: hsl(216, 50%, 16%);
+    --line-blue: hsl(215, 32%, 27%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+  }
+  
+    body { 
+      background-color: var(--main-bg-blue); 
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
+
+    }
+    main{
+        color: #ffffff;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        display: flex;
+       flex-direction: column;
+        width: 340px;
+        background-color: var(--card-bg-blue);
+        height: auto;
+        border-radius: 10px;
+        /* -webkit-box-shadow: 0px 0px 10px 15px rgba(37,34,84,1);
+-moz-box-shadow: 0px 0px 10px 15px rgba(37,34,84,1); */
+        box-shadow: 0px 0px 10px 15px rgb(17, 15, 36);
+      
+    }
+    .card>div{
+      margin: 0.7rem 1.5rem;
+    }
+    .img-container{
+        margin: 1.5rem;
+        border-radius: 10px;
+    }
+    .card-title{
+      color: rgb(215, 227, 252);
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .card-paragraph{
+      color: var(--soft-blue);
+      font-size: 16px;
+    }
+    .card-info{
+      color: var(--cyan);
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+
+    }
+    .grid-item{
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      
+    }
+    .grid-item:nth-child(2){
+      color: var(--soft-blue);
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .img{
+      height: 20px;
+      width: 20px;
+     
+    }
+    .grid-item>span{
+      padding: 1px;
+    }
+
+    .card-creator{
+      font-size: 16px;
+      color: var(--soft-blue);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+    .hr{
+      border-top: 0.5px solid var(--soft-blue);
+    }
+    .etherium{
+      padding-right: 10px;
+    }
+    .clock{
+      padding-right: 10px;
+    }
+    .avatar{
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+   
